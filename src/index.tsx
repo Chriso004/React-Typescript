@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import StatePractice from "./StatePractice";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App header="this is header" />
+    <StatePractice />
   </React.StrictMode>,
   document.getElementById('root')
 );
