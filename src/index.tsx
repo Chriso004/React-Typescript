@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import StatePractice from "./StatePractice";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StatePractice />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
