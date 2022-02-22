@@ -10,12 +10,12 @@ const App = () => {
 
   const IncreaseCount = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
-    setCount({count: countState.count + 1});
+    setCount((countState) => ({ count: countState.count + 1 }));
   }
 
   const DecreaseCount = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
-    setCount({count: countState.count - 1});
+    setCount((countState) => ({count: countState.count - 1}));
   }
 
   return (
