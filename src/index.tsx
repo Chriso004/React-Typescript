@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from "./App";
+import TimeConverter from './practice/TimeConverter';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
