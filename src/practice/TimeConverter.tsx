@@ -16,7 +16,7 @@ const TimeConverter = () => {
     });
     const [value, setValue] = useState<TimeConverterValueStates>({
         resultValue: 0,
-    })
+    });
 
     const ChangeInputOption = (e: React.ChangeEvent<HTMLSelectElement>) => {
         e.preventDefault();
@@ -24,7 +24,7 @@ const TimeConverter = () => {
         setOption({
             inputOption: optionValue,
             resultOption: options.resultOption,
-        })
+        });
     }
 
     const ChangeResultOption = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -33,7 +33,7 @@ const TimeConverter = () => {
         setOption({
             inputOption: options.inputOption,
             resultOption: optionValue,
-        })
+        });
     }
 
     const ConvertTime = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -59,7 +59,6 @@ const TimeConverter = () => {
     }
 
     const title = <h2>Time Converter</h2>
-
     const inputContainer =
         <div id='inputContainer'>
             <form>
@@ -71,7 +70,6 @@ const TimeConverter = () => {
                 <input type='number' placeholder='0' onChange={ConvertTime}></input>
             </form>
         </div>
-
     const resultContainer =
         <div id='resultContainer'>
             <form>
